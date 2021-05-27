@@ -1,4 +1,4 @@
-
+# 从零实现KNN算法，并进行电影数据分类
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
