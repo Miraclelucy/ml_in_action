@@ -76,7 +76,7 @@ def datingClass(train, test, k):
     m = test.shape[0]
     count = 0
     for i in range(m):
-        dist = np.sum((train.iloc[:, : n] - test.iloc[i, :n]) ** 2, axis=1) ** 0.5
+        dist = np.sum((train.iloc[:, : n] - test.iloc[i, :n]) ** 2, axis=1) ** 0.5 # 求欧式距离
         dist_l = pd.DataFrame({'dist': dist, 'label': train.iloc[:, n]})
         dr = dist_l.sort_values(by='dist')[:k]
         re = dr.loc[:, 'label'].value_counts()
