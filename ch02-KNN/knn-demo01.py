@@ -30,7 +30,7 @@ dr = dist_label.sort_values(by='dist')[:k]
 
 # 4.KNN算法封装
 def classify0(inx, dataset, k):
-    # 1.求距离
+    # 1.求欧式距离
     dist = np.sum((dataset.iloc[:6, 1:3] - inx) ** 2, axis=1) ** 0.5
     # 2.距离和标签组合
     dist_label = pd.DataFrame({'dist': dist, 'label': movie_data.iloc[:6, 3]})
