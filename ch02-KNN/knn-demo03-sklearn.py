@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 利用sklearn框架中的KNeighborsClassifier实现KNN分类
+# 利用sklearn框架中的KNeighborsClassifier实现手写数字识别
 # 关于sklearn的cross_val_score进行交叉验证，可以参考博客https://blog.csdn.net/qq_36523839/article/details/80707678
 from os import listdir
 
