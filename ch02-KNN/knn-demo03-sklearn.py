@@ -35,8 +35,8 @@ def getdata(data_dir):
 
 
 if __name__ == "__main__":
-    data_train, label_train = getdata('digits/trainingdigits')  # 获取训练集
-    data_test, label_test = getdata('digits/testdigits')  # 获取测试集
+    data_train, label_train = getdata('digits/trainingDigits')  # 获取训练集
+    data_test, label_test = getdata('digits/testDigits')  # 获取测试集
 
     # 执行交叉验证
     k_range = range(1, 20)
