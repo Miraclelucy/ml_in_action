@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 手写数字识别 - 利用sklearn框架中的kneighborsclassifier实现knn分类
+# 手写数字识别 - 利用sklearn框架中的Kneighborsclassifier实现knn分类
 from os import listdir
 
 import matplotlib.pyplot as plt
