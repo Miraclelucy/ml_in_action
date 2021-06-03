@@ -18,12 +18,12 @@ def get_data(path):
     lables = []  # lables是一个列表,训练集中len(lables)是1934，也是文件的总数
     for i in range(len(datafilelist)):
         filename = datafilelist[i]  # 获取文件名
-        txt = pd.read_csv(path + f'/{filename}', header=None)
+        txt = pd.read_csv(path + f'/{filename}', header=None)  # txt是32x1的数组，即32行1列，每一列是长度为32的0-1字符串
         num = np.zeros((1, 1024))  # 用来存储构成一个数字的所有二进制数据
-        for m in range(32):  # 获取一个文件的行数，这里是32
-            for n in range(32):  # 获取一个文件的列数，这里是32
-                num[0, 32 * m + n] = txt.iloc[m, 0][n]  # 将所有行的数据拼接成一个字符串，且最后字符串的长度是1024
-        img[i, :] = num  # 将一个长度是1024的字符串添加进列表img
+        for m in range(32):  # 
+            for n in range(32):  # 
+                num[0, 32 * m + n] = txt.iloc[m, 0][n]  # 
+        img[i, :] = num  # 给1934x1024二位数组的每一行赋值
         filelabel = filename.split('_')[0]  # 获取真实数字
         lables.append(filelabel)
     return img, lables
