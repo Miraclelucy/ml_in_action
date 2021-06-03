@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 # 手写数字识别 - 利用sklearn框架中的Kneighborsclassifier实现knn分类
+# 本示例运行时间约需要5秒钟
 from os import listdir
 
 import matplotlib.pyplot as plt
 import numpy as np
+import time
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
@@ -35,6 +37,7 @@ def getdata(data_dir):
 
 
 if __name__ == "__main__":
+    start_time = time.perf_counter()
     data_train, label_train = getdata('digits/trainingDigits')  # 获取训练集
     data_test, label_test = getdata('digits/testDigits')  # 获取测试集
 
@@ -60,3 +63,6 @@ if __name__ == "__main__":
     label_predict = model.predict(data_test)
     print("total test data number:", len(data_test))
     print("the prediction accuracy is:", accuracy_score(label_test, label_predict))
+
+    end_time = time.perf_counter()
+    print('Running time: %s Seconds' % (end_time - start_time))
