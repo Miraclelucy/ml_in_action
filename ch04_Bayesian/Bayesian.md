@@ -17,8 +17,7 @@
 ### 二、公式介绍
 
 贝叶斯公式：
-
-
+[贝叶斯公式](https://github.com/Miraclelucy/ml_in_action/blob/main/img/0.png?raw=true)
 
 这里：
 
