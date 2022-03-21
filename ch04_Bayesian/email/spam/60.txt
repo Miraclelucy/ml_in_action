@@ -1,0 +1,74 @@
+login.jsp
+<form action="LoginAction.action">  
+   用户名：<input type="text" name="username"/><br/>  
+    密      码： <input type="password" name="password"/><br/>  
+   <input type="submit" value="提交"/>  
+   </form> 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+ 
+<struts>
+ <constant name="struts.i18n.encoding" value="utf-8" />  
+    <package name="struts2" extends="struts-default">  
+       <action name="LoginAction" class="com.bzu.action.LoginAction">  
+            <result name="success">success.jsp</result>  
+            <result name="fail">fail.jsp</result>  
+        </action>
+    </package> 
+</struts>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>9.3login</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+   <filter-name>struts2</filter-name>
+   <filter-class>
+       org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
+   </filter-class>
+</filter>
+   <filter-mapping>
+       <filter-name>struts2</filter-name>
+       <url-pattern>*.action</url-pattern>
+   </filter-mapping>
+</web-app>
+
+
+
+package com.bzu.action;
+
+public class LoginAction {
+	private String username;  
+    private String password;  
+    public String getUsername() {  
+        return username;  
+    }  
+    public void setUsername(String username) {  
+        this.username = username;  
+    }  
+    public String getPassword() {  
+        return password;  
+    }  
+    public void setPassword(String password) {  
+        this.password = password;  
+    }  
+    public String execute(){  
+          
+        if(username.equals("admin")&&password.equals("123456"))  
+            return "success";  
+        return "fail";  
+    }  
+}

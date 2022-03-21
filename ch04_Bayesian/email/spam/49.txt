@@ -1,0 +1,7 @@
+用户， 晁展 您好：
+
+感谢您注册ETEST通行证帐号,请点击以下任一链接进行邮箱验证！若无法点击，请将链接复制到浏览器打开。此链接将在24小时后失效。
+
+教育网激活链接： https://passport.etest.edu.cn/Manage/Activate/50E307A041F7D23E95DA12B931093CB58F4A736728D9DB4D459156A7C5FF88EF9E7A6BF8FD15AC2B
+
+非教育网激活链接： https://passport.etest.net.cn/Manage/Activate/50E307A041F7D23E95DA12B931093CB58F4A736728D9DB4D459156A7C5FF88EF9E7A6BF8FD15AC2B

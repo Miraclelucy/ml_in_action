@@ -1,0 +1,56 @@
+尊敬的开发者：
+
+感谢你使用DCloud.io的产品，在你的共同支持下，DCloud取得了中国开发者服务团队未曾达到的成绩：
+1. HBuilder开发者数量突破200万！
+HBuilder与sublime、webstorm、vscode并驾齐驱为前端界四大开发工具，成为国人骄傲。
+下图是四大工具的百度指数，可以看到HBuilder仍然在快速增长。
+  
+[HBuilder的百度指数](http://zhishu.baidu.com/?tpl=trend&type=0&area=0&time=13&word=hbuilder%2Csublime%2Cwebstorm%2Cvscode )
+
+2. mui，与react native并列成为最受欢迎的跨平台开发框架，遥遥领先于其他框架。
+  
+[mui的百度指数](http://zhishu.baidu.com/?tpl=trend&type=0&area=0&time=13&word=mui%2Ccordova%2Creact+native%2Cweex)
+
+
+这些成绩都是过往，我们既往不恋，纵情向前。现在DCloud跨入了全新的发展阶段，请各位开发者关注：
+
+1. DCloud全新推出下一代产品HBuilderX+UniApp
+- HBuilderX是基于C++架构的全新开发工具
+      脱离eclipse后，HBuilderX非常轻巧(安装包十余M)、极速（1秒启动），大文档打开速度更超过其他优秀编辑器
+      HBuilderX继承了HBuilder强大的语法提示，很多开发者都在编辑器和IDE之间纠结，现在完美了，HBuilderX集二者优势于一身。
+      对了，HBuilderX还是体验绝佳的markdown编辑器
+      [详见](http://www.dcloud.io/hbuilderx.html)
+- UniApp是下一代的手机端跨平台引擎
+      UniApp结合了react native和weex的原生渲染优势，大幅提升了App的性能体验，又保持了DCloud产品一贯的易用性，我们希望将其打造为终极跨平台开发引擎。
+      [详见](http://github.com/dcloudio/uniapp)
+ 
+2. DCloud除了帮助开发者做出来App，还要帮助开发者运营好App
+目前DCloud推出了3项运营服务：
+- [D-AD广告联盟](http://www.dcloud.io/dad.html)，帮助开发者挣广告佣金
+- [D-Portal应用发布平台](http://www.dcloud.io/dportal.html)，帮助开发者获取用户
+- [Uni-Stat统计平台](http://dcloud.io/unistat.html)，帮助开发者提供运营分析、收集错误和用户反馈，改善留存
+
+很多开发者都有变现需求，变现也能够促使开发者有动力做更好的App。 
+但很多创业者的App日活较低，面对广告主没有议价能力，申请广告SDK也容易被广告联盟拒绝。
+我们希望尽可能帮助创业者成功，于是DCloud整合了众多开发者的流量，面向广告主谈判，拿到了更好的价格，并开放给开发者。
+
+DCloud的各项运营服务都与开发工具无缝结合，应用打包时打个勾就能开通广告。
+
+如果你不负责App的变现和运营，也请把这封邮件转给相关同事。
+
+越多App加入D-AD广告平台，这个生态整体变现溢价能力越高，对DCloud团队和其他希望变现的创业者都有更多的帮助，最终也能让你得到更好的技术服务和更高的变现收益。
+
+最近还有很多好事：
+APICloud公司之前破解抄袭HBuilder源码，法院已经正式宣判APICloud赔偿DCloud损失并公开道歉，为保护中国自主创新知识产权树立了一个标杆案例。[详见](http://dcloud.io/150914/)
+保护中国的知识产权环境，人人有责。
+
+最后：
+帮助开发者做好App，帮助开发者运营好App，DCloud就是为开发者而生的。
+未来仍然任重道远，但我们相信在各位共同的支持下，彼此都能取得更大的成功！
+
+
+-------------------------------------------------------------------------------------
+DCloud.io
+- 为开发者而生 -
+
+

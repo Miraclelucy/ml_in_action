@@ -1,0 +1,40 @@
+
+本周更新日志
+
+    码云新版手机版公测，请使用手机访问，欢迎反馈
+    码云信使GiteeX开发任务众包发布，欢迎报名 查看
+    企业版任务更改关联项目添加日志记录
+    项目Issue增加任务优先级的指定功能
+    企业版外包成员更改为不可以访问企业内部开源项目
+    增强项目同步成功的提示，加上源项目地址说明
+    企业版增加任务附件创建者/创建时间的显示
+
+码云本周精选推荐项目
+Eugen/hanlp-tokenizer Java 中英文分词
+
+基于HanLP自然语言处理包的elasticsearch分词器
+强子哥哥/MyShardingSql Java 数据库开发包
+
+MyShardingSql ,一个轻量级的分库分表组件, 基于Range和哈希取模实现的轻量级分库分表组件，支持事务,分库分表,读写分离，基于MyBatis+插件+Druid+JSqlParser实现
+下一页/react-native-full-example JavaScript 教程配套代码
+
+第一个完整的react-native项目。包括服务端和移动端两部分。服务端使用express+bootstrap进行搭建，主要功能有登录、退出、模块选择、查看、修改、删除、分页等后台管理的基本功能；移动端主要用到组件View、Text、Image、ScrollView、ListView等常用的组件，也使用了第三方的地图服务(高德地图)，作为初学者。是一个很好的学习案例。
+下一页/toilet-weapp JavaScript 微信小程序
+
+微信版小明找厕所V2.0，升级为本地微信自带的地图路径规划、在地图上显示所有marker点、添加关于页面。主要功能包括：1.可以在地图上面展示所有厕所的位置，并且标记，2.直接在小程序端进行路径规划，3.ios和android一样默认选择步行方式，4.制作关于界面
+djmpink/TailLog-Agent Java 日志工具包
+
+配合TailLog工具（实时日志管理查看工具）使用的代理服务程序
+IDEMaker/IDEMaker-php开源订餐系统 PHP 网店/商城
+
+IDEMaker-php开源订餐系统-B2B2C商业化的开源项目平台
+aaden/aaden-pay Java 支付开发包
+
+面向互联网金融行业的支付系统(模块)
+冷V寒/BaseUIFrame Android Android组件/项目
+
+基于QMUI封装的Android UI 基础框架
+codingplayboy/react-blog JavaScript 博客系统
+
+使用React／Webpack／Babel／Eslint／material-ui开发个人博客项目。
+@Gitee.com 

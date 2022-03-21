@@ -1,0 +1,38 @@
+作者：月光 (williamlong) | 来自：月光博客
+反向代理（Reverse Proxy）方式是指以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。
+
+反向代理可以启用高级URL策略和管理技术，从而使处于不同web服务器系统的web页面同时存在于同一个URL空间下。
+
+通过IIS安装反向代理，可以使得IIS和Apache等服务器运行在同一台机器上，IIS和Apache都可以通过80端口访问，使得网站的兼容性更强。
+
+IIS实现反向代理有两种方法，IIS6通过第三方工具ISAPI Rewrite来实现反向代理，IIS7以后的版本可以用过微软自己的URL Rewrite和Application Request Routing来实现反向代理。
+
+
+IIS6
+
+先安装ISAPI_Rewrite3_0082.msi，安装完成后，再安装一个Apache服务器，Apache安装完成后，设置HTTP端口为8080，HTTPS端口4433，而IIS的HTTP端口为80，HTTPS端口443，IIS和Apache的端口不能冲突。
+
+IIS新建一个站点，在网站根目录建立一个名为 .htaccess 的文件，内容如下，域名请修改为自己的域名：
+
+RewriteEngine On
+RewriteCompatibility2 On
+RepeatLimit 200
+RewriteBase 
+RewriteCond %{HTTP:Host} ^www.williamlong.info$
+RewriteProxy (.*) http://www.williamlong.info:8080$1 [NC,P,H]
+
+之后，IIS6+Win2003 配置反向代理到 Apache 就成功了，制定域名可以通过80端口的IIS访问，而实际网站则是再Apache的8080端口，对于用户来说是不可见的。
+
+IIS7
+
+IIS7不用安装第三方的软件，本身反向代理软件微软就提供，我们使用微软自己的URL Rewrite和Application Request Routing即可实现反向代理。
+
+先安装URL Rewrite和Application Request Routing，只转发到IIS内网站，则不需要安装ARR。安装完成后，再安装一个Apache服务器，Apache安装完成后，设置HTTP端口为8080，HTTPS端口4433，而IIS的HTTP端口为80，HTTPS端口443，IIS和Apache的端口不能冲突。
+
+安装好以上两个插件，重启IIS管理器，然后点击当前主机，就会发现两个新增的图标了。
+
+点击Application Request Routing图标，选择Server Proxy Settings，勾上Enable proxy并点击右侧的应用。
+
+选择需要反向代理的站点，再选择“URL重写”，点击添加规则，选择空白规则，“条件输入”填写“{HTTP_HOST}”，模式为^www.williamlong.info$，入站规则的操作类型为“重写”，重写URL为“http://www.williamlong.info:8080{R:1}”,填好了保存下，即可完成IIS7的反向代理配置。
+
+原文链接：《IIS实现反向代理》
