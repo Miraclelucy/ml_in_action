@@ -49,12 +49,12 @@ P(B)也是先验概率，只是在贝叶斯的很多应用中不重要（因为�
  
 ### 四、实际例子
 似乎还是有点难懂，再来继续看一个复杂点的朴素贝叶斯分类应用。已知有如下的天气记录与是否打网球的关系记录表。  
-![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/1.png?raw=true)
+![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/1.PNG?raw=true)
 
 假设今天天气状况是：天气晴、气温冷、湿度高、风力强，问是否会去打网球呢？
 
 现在要计算P(打网球|天气晴、气温冷、湿度高、风力强)和P(不打网球|天气晴、气温冷、湿度高、风力强)的概率。根据贝叶斯公式（假设，天气、气温、湿度和风力是相互独立的）  
-![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/2.png?raw=true)
+![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/2.PNG?raw=true)
 
 从前面提供的统计数据可以计算出
 
@@ -77,10 +77,10 @@ P(湿度高)=7/14
 P(风力强)=6/14
 
 从而计算得到  
-![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/3.png?raw=true)
+![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/3.PNG?raw=true)
 
 同理可以计算出  
-![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/4.png?raw=true)
+![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/4.PNG?raw=true)
 
 很显然不打网球的概率高于打网球的概率，所以结论是不打网球。
 
