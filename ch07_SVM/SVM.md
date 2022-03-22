@@ -29,6 +29,6 @@ SVM算法就是尝试寻找一个最优的决策边界（最优划分超平面�
 
 这种情况的解决方法，就是将二维线性不可分样本映射到高维空间中，让样本点在高维空间线性可分，如下图所示  
 ![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch07/8.jpg?raw=true)
-![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch07/9.jpg?raw=true)
-![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch07/10.jpg?raw=true)
-![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch07/11.jpg?raw=true)
+![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch07/9.png?raw=true)
+![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch07/10.png?raw=true)
+![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch07/11.png?raw=true)
