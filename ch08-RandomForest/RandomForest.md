@@ -44,7 +44,7 @@ Stacking也称Stacked Generalization，指训练一个用于组合所有个体�
 
 1、平均法
 
-平均法是一种集成连续数值型输出常用的方法, 它主要分为简单平均法和加权平均法.
+平均法是一种集成连续数值型输出常用的方法, 它主要分为简单平均法和加权平均法.  
 ![avatar](https://github.com/Miraclelucy/ml_in_action/blob/main/img/ch08/4.png?raw=true)
 
 2、投票法
